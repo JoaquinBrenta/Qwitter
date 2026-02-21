@@ -12,6 +12,7 @@ export default defineConfig((/* ctx */) => {
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
     boot: [
+      'firebase'
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
@@ -24,9 +25,9 @@ export default defineConfig((/* ctx */) => {
       // 'ionicons-v4',
       // 'mdi-v7',
       // 'fontawesome-v6',
-      // 'eva-icons',
+    //  'eva-icons',
       // 'themify',
-      // 'line-awesome',
+       'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
       'roboto-font', // optional, you are not bound to it
@@ -90,7 +91,10 @@ export default defineConfig((/* ctx */) => {
 
     // animations: 'all', // --- includes all animations
     // https://v2.quasar.dev/options/animations
-    animations: [],
+    animations: [
+    'fadeIn',
+    'fadeOut'
+    ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#sourcefiles
     // sourceFiles: {
